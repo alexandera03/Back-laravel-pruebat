@@ -36,7 +36,7 @@ class UsuariosController extends Controller
 
             }else{
                 $res = Usuarios::create($data);
-                return response()->json($data,200);
+                return response()->json(['usuario'=>$data],200);
             }
         } catch (\Throwable $th) {
             //throw $th;
