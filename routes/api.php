@@ -19,9 +19,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::prefix('usuarios')->group(function(){
+Route::prefix('usuarios')->namespace('App\http\Controllers\API\UsuariosController')->group(function(){
     Route::get('/', 'App\http\Controllers\API\UsuariosController@get');
-    Route::post('/',[UsuariosController::class,'create']);
+    Route::post('/','App\http\Controllers\API\UsuariosController@create');
     Route::get('/{id}','App\http\Controllers\API\UsuariosController@getById');
     Route::post('/login','App\http\Controllers\API\UsuariosController@login');
     Route::put('/{id}','App\http\Controllers\API\UsuariosController@update');
