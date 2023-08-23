@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use app\http\Controllers\API\UsuariosController;
+use App\http\Controllers\API\UsuariosController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
