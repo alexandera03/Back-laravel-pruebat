@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
-use app\http\Controllers\API\UsuariosController;
+//use app\http\Controllers\API\UsuariosController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,10 +20,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::prefix('usuarios')->group(function(){
-    Route::get('/', 'App\http\Controllers\API\UsuariosController@get');
-    Route::post('/','App\http\Controllers\API\UsuariosController@create');
-    Route::get('/{id}','App\http\Controllers\API\UsuariosController@getById');
-    Route::post('/login','App\http\Controllers\API\UsuariosController@login');
-    Route::put('/{id}','App\http\Controllers\API\UsuariosController@update');
-    Route::delete('/{id}','App\http\Controllers\API\UsuariosController@delete');
+    Route::get('/', 'app\Http\Controllers\API\UsuariosController@get');
+    Route::post('/','app\Http\Controllers\API\UsuariosController@create');
+    Route::get('/{id}','app\Http\Controllers\API\UsuariosController@getById');
+    Route::post('/login','app\Http\Controllers\API\UsuariosController@login');
+    Route::put('/{id}','app\Http\Controllers\API\UsuariosController@update');
+    Route::delete('/{id}','app\Http\Controllers\API\UsuariosController@delete');
 });
