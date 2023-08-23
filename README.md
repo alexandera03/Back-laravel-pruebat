@@ -7,6 +7,14 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## NOTA
+Instalar xamp y subir los servicios de mysql y Apache
+Instalar dependencias con composer install
+
+ejecutar php artisan migrate para la creación de la tabla usuarios.
+ejecutar php artisan serve para ejecutar el backend
+
+Probar los servicios con postman
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
